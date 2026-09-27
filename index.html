@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog to Social Content Pipeline</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+    header {
+      padding: 24px 8%;
+      border-bottom: 1px solid #334155;
+      font-weight: bold;
+      color: #38bdf8;
+    }
+    main {
+      max-width: 950px;
+      margin: auto;
+      padding: 70px 24px;
+    }
+    .tag {
+      color: #38bdf8;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    h1 { font-size: clamp(36px, 6vw, 60px); line-height: 1.1; }
+    h2 { margin-top: 45px; color: #38bdf8; }
+    .card {
+      background: #1e293b;
+      padding: 24px;
+      border: 1px solid #334155;
+      border-radius: 14px;
+      margin: 16px 0;
+    }
+    .flow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .flow span {
+      background: #1e293b;
+      padding: 10px 15px;
+      border-radius: 8px;
+      border: 1px solid #475569;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 22px;
+      background: #0284c7;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    footer {
+      padding: 30px 8%;
+      border-top: 1px solid #334155;
+      color: #94a3b8;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>Blog → Social Content Pipeline</header>
+  <main>
+    <p class="tag">Make.com Automation Project</p>
+    <h1>One article.<br>Three social platforms.</h1>
+    <p>
+      An automated workflow that transforms RSS articles into
+      platform-specific social media drafts using AI and stores
+      them in Airtable for review.
+    </p>
+
+    <h2>How It Works</h2>
+    <div class="flow">
+      <span>RSS Feed</span>
+      <span>→ Jina AI</span>
+      <span>→ Google Gemini</span>
+      <span>→ Airtable</span>
+    </div>
+
+    <h2>Platforms Supported</h2>
+    <div class="card">
+      <h3>LinkedIn</h3>
+      Generates concise professional social media drafts.
+    </div>
+    <div class="card">
+      <h3>X</h3>
+      Generates short posts with the original article URL.
+    </div>
+    <div class="card">
+      <h3>Instagram</h3>
+      Generates concise captions based on article content.
+    </div>
+
+    <h2>Technology Stack</h2>
+    <p>Make.com · Airtable · Jina AI · Google Gemini 3.5 Flash-Lite</p>
+
+    <h2>Project Status</h2>
+    <div class="card">
+      The RSS-to-Airtable draft-generation workflow has been
+      tested successfully. Human approval-gated publishing,
+      automatic scheduling, and advanced error handling remain
+      future improvements.
+    </div>
+
+    <a href="https://github.com/sumith559969-max/blog-to-social-content-pipeline">
+      View Project Repository
+    </a>
+  </main>
+  <footer>Blog-to-Social Content Pipeline · 2026</footer>
+</body>
+</html>
