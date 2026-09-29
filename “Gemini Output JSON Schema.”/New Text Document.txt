@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "properties": {
+    "linkedin": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "One concise factual sentence including the exact article URL."
+        },
+        "source_url": {
+          "type": "string",
+          "description": "Exact source article URL."
+        }
+      },
+      "required": ["text", "source_url"],
+      "additionalProperties": false
+    },
+    "x": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "One concise sentence including the complete article URL; maximum 250 characters."
+        },
+        "source_url": {
+          "type": "string",
+          "description": "Exact source article URL."
+        }
+      },
+      "required": ["text", "source_url"],
+      "additionalProperties": false
+    },
+    "instagram": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "One concise factual sentence including the exact article URL."
+        },
+        "source_url": {
+          "type": "string",
+          "description": "Exact source article URL."
+        }
+      },
+      "required": ["text", "source_url"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["linkedin", "x", "instagram"],
+  "additionalProperties": false
+}
